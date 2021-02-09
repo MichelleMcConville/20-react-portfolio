@@ -20,8 +20,8 @@ function App() {
     {/* Navbar */}
     <nav className="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
       {/* Image Logo */}
-      <a className="navbar-brand logo-image" style={{ width: "32px" }}><img src="images/logo.svg" alt="alternative"/></a>
-      <a className="navbar-brand logo-text page-scroll">Michelle McConville</a>   
+      <div className="navbar-brand logo-image" style={{ width: "32px" }}><img src="images/logo.svg" alt="alternative"/></div>
+      <div className="navbar-brand logo-text page-scroll">Michelle McConville</div>   
 
     {/* Mobile Menu Toggle Button */}
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,9 +89,9 @@ function App() {
           <div className="col-lg-7">
             <div className="text-container">
               <h2>About Me</h2>
-              <p style={{ color: 333333 }}>My name is Michelle McConville, wife and mother of two. I love to cook, create & hang with family!</p>
-              <p style={{ color: 333333 }}>I'm a experienced QA Engineer, passionate about working hand-in-hand with developers, product owners, and business analyst to test requirements and specifications that accurately reflect the business needs.</p>
-              <p style={{ color: 333333 }}>Currently attending KU Coding Boot Camp (University of Kansas), where I will gain full-stack developer certificate, which will lead into a software development job!</p>
+              <p style={{ color: "#333" }}>My name is Michelle McConville, wife and mother of two. I love to cook, create & hang with family!</p>
+              <p style={{ color: "#333" }}>I'm a experienced QA Engineer, passionate about working hand-in-hand with developers, product owners, and business analyst to test requirements and specifications that accurately reflect the business needs.</p>
+              <p style={{ color: "#333" }}>Currently attending KU Coding Boot Camp (University of Kansas), where I will gain full-stack developer certificate, which will lead into a software development job!</p>
 
             </div> {/* end of text-container */}
           </div> {/* end of col */}
@@ -313,12 +313,18 @@ function App() {
 
             {/* Filter */}
             <div className="button-group filters-button-group">
-              <a className="button is-checked" data-filter="*"><span>SHOW ALL</span></a>
-              <a className="button" data-filter=".project"><span>PROJECT</span></a>
-              <a className="button" data-filter=".homework"><span>HOMEWORK</span></a>
-              <a className="button" data-filter=".fs"><span>FULL STACK APP</span></a>
-              <a className="button" data-filter=".cli"><span>COMMAND LINE INTERFACE</span></a>
-              <a className="button" data-filter=".misc"><span>MISC</span></a>
+              {/* <a className="button is-checked" data-filter="*"><span>SHOW ALL</span></a> */}
+              <button type="button" class="button is-checked" data-filter="*">SHOW ALL</button>
+              {/* <a className="button" data-filter=".project"><span>PROJECT</span></a> */}
+              <button type="button" class="button" data-filter=".project">PROJECT</button>
+              {/* <a className="button" data-filter=".homework"><span>HOMEWORK</span></a> */}
+              <button type="button" class="button" data-filter=".homework">HOMEWORK</button>
+              {/* <a className="button" data-filter=".fs"><span>FULL STACK APP</span></a> */}
+              <button type="button" class="button" data-filter=".fs">FULL STACK APP</button>
+              {/* <a className="button" data-filter=".cli"><span>COMMAND LINE INTERFACE</span></a> */}
+              <button type="button" class="button" data-filter=".cli">COMMAND LINE INTERFACE</button>
+              {/* <a className="button" data-filter=".misc"><span>MISC</span></a> */}
+              <button type="button" class="button" data-filter=".misc">MISC</button>
             </div> {/* end of button group */}
 
             <div className="grid">
